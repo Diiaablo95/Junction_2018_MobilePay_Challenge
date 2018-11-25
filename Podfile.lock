@@ -1,0 +1,45 @@
+PODS:
+  - Alamofire (4.7.3)
+  - BluetoothKit (0.4.0)
+  - MarqueeLabel/Swift (3.2.0)
+  - NotificationBannerSwift (1.8.0):
+    - MarqueeLabel/Swift (~> 3.2.0)
+    - SnapKit (~> 4.0.1)
+  - QRCodeReader.swift (9.0.1)
+  - SnapKit (4.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - BluetoothKit (from `https://github.com/Diiaablo95/BluetoothKit.git`, branch `master`)
+  - NotificationBannerSwift
+  - QRCodeReader.swift (~> 9.0.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - QRCodeReader.swift
+    - SnapKit
+
+EXTERNAL SOURCES:
+  BluetoothKit:
+    :branch: master
+    :git: https://github.com/Diiaablo95/BluetoothKit.git
+
+CHECKOUT OPTIONS:
+  BluetoothKit:
+    :commit: 9f08b7535f7227d8cf94075130586b1ac5094580
+    :git: https://github.com/Diiaablo95/BluetoothKit.git
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  BluetoothKit: 0f14a99e68a48e29cf262d33860b21401838a230
+  MarqueeLabel: 440a502b91a9179bd98f9fff00ba1150650a1c0e
+  NotificationBannerSwift: 49fc4be7fabada55b189b50e72184c92edd5f7f7
+  QRCodeReader.swift: 96292a5612fbc2fd9a0b26f93fa5164c8d02f59d
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+
+PODFILE CHECKSUM: dd6e07db1e5e2ab4b4a1dbbb03dc035f050270ab
+
+COCOAPODS: 1.5.3

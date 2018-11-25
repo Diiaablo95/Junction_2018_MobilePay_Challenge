@@ -1,24 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yE0-Jg-nU5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Your balance-->
+        <scene sceneID="ANQ-zy-ffF">
+            <objects>
+                <viewController id="aqR-m5-seW" customClass="RecapViewcontroller" customModule="Junction_2018_MobilePay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R25-I6-sSg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your balance is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esD-c8-aVa">
+                                <rect key="frame" x="50" y="164" width="275" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="u3R-1L-tAW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 €" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ea7-fp-3uK">
+                                <rect key="frame" x="50" y="223" width="275" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="oXH-EJ-jqW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="65"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ea7-fp-3uK" firstAttribute="trailing" secondItem="esD-c8-aVa" secondAttribute="trailing" id="Moq-Ln-NsT"/>
+                            <constraint firstItem="esD-c8-aVa" firstAttribute="leading" secondItem="3cx-l2-rLJ" secondAttribute="leading" constant="50" id="NYO-ge-Fpy"/>
+                            <constraint firstItem="3cx-l2-rLJ" firstAttribute="trailing" secondItem="esD-c8-aVa" secondAttribute="trailing" constant="50" id="ZjC-DP-cmL"/>
+                            <constraint firstItem="ea7-fp-3uK" firstAttribute="top" secondItem="esD-c8-aVa" secondAttribute="bottom" constant="-1" id="eFz-hP-Hoc"/>
+                            <constraint firstItem="ea7-fp-3uK" firstAttribute="leading" secondItem="esD-c8-aVa" secondAttribute="leading" id="l8J-ND-Orr"/>
+                            <constraint firstItem="esD-c8-aVa" firstAttribute="top" secondItem="3cx-l2-rLJ" secondAttribute="top" constant="100" id="o1Z-2N-sAt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3cx-l2-rLJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Your balance" id="01u-sP-y3X"/>
+                    <connections>
+                        <outlet property="balanceLabel" destination="ea7-fp-3uK" id="sRk-es-HGe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2Q-oD-2mw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660" y="941.37931034482767"/>
+        </scene>
+        <!--Scan the QRCode!-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OutgoingPaymentViewController" customModule="Junction_2018_MobilePay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="9Te-cU-VQn">
+                                <rect key="frame" x="112.5" y="258.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="NDi-YB-h1r"/>
+                                    <constraint firstAttribute="height" constant="150" id="o3l-EB-jUC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Te-cU-VQn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BeL-vZ-n7W"/>
+                            <constraint firstItem="9Te-cU-VQn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LVo-XQ-VCW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Scan the QRCode!" id="QxL-lo-1LB"/>
+                    <connections>
+                        <outlet property="qrCodeImageView" destination="9Te-cU-VQn" id="bee-Ff-gYa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1660" y="-779.46026986506752"/>
+        </scene>
+        <!--Get paid!-->
+        <scene sceneID="LbZ-yX-vSA">
+            <objects>
+                <tableViewController id="yMG-LZ-t0m" customClass="IncomingPaymentTableViewController" customModule="Junction_2018_MobilePay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="91Y-jr-aqQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="85" id="rA9-ab-Hrb" customClass="ItemOnSaleTableViewCell" customModule="Junction_2018_MobilePay" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rA9-ab-Hrb" id="amn-n0-e59">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TzO-Qh-rvi">
+                                            <rect key="frame" x="16" y="8" width="122" height="68.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="TzO-Qh-rvi" secondAttribute="height" multiplier="16:9" id="zcl-w2-JnM"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fS-iZ-bCM">
+                                            <rect key="frame" x="146" y="8" width="221" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="ijY-Ah-URC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8W-Hs-3HU">
+                                            <rect key="frame" x="146" y="55.5" width="221" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="rWE-rg-U8O"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="TzO-Qh-rvi" firstAttribute="top" secondItem="amn-n0-e59" secondAttribute="top" constant="8" id="0F7-ad-iUs"/>
+                                        <constraint firstItem="s8W-Hs-3HU" firstAttribute="bottom" secondItem="TzO-Qh-rvi" secondAttribute="bottom" id="6Sm-sB-8ec"/>
+                                        <constraint firstItem="s8W-Hs-3HU" firstAttribute="leading" secondItem="TzO-Qh-rvi" secondAttribute="trailing" constant="8" id="Aat-as-jGN"/>
+                                        <constraint firstItem="3fS-iZ-bCM" firstAttribute="top" secondItem="TzO-Qh-rvi" secondAttribute="top" id="AmQ-4B-l3r"/>
+                                        <constraint firstAttribute="bottom" secondItem="TzO-Qh-rvi" secondAttribute="bottom" constant="8" id="I4b-4S-UvB"/>
+                                        <constraint firstAttribute="trailing" secondItem="s8W-Hs-3HU" secondAttribute="trailing" constant="8" id="Kud-lz-CBY"/>
+                                        <constraint firstItem="TzO-Qh-rvi" firstAttribute="leading" secondItem="amn-n0-e59" secondAttribute="leading" constant="16" id="f5A-qe-t3U"/>
+                                        <constraint firstAttribute="trailing" secondItem="3fS-iZ-bCM" secondAttribute="trailing" constant="8" id="i4G-SX-ECm"/>
+                                        <constraint firstItem="3fS-iZ-bCM" firstAttribute="leading" secondItem="TzO-Qh-rvi" secondAttribute="trailing" constant="8" id="xdH-TC-BZj"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="itemImageView" destination="TzO-Qh-rvi" id="gqL-3L-7Zj"/>
+                                    <outlet property="itemNameLabel" destination="3fS-iZ-bCM" id="0FB-Og-MH4"/>
+                                    <outlet property="itemPriceLabel" destination="s8W-Hs-3HU" id="bh8-mn-bhU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yMG-LZ-t0m" id="yws-TV-vbV"/>
+                            <outlet property="delegate" destination="yMG-LZ-t0m" id="LiV-jc-xgp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Get paid!" id="u9l-fi-4M2"/>
+                    <connections>
+                        <segue destination="6dI-Cx-ScB" kind="show" identifier="showItemQRCode" id="M3V-YQ-iKC"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A3j-Mj-7wM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4290.3999999999996" y="-226.23688155922042"/>
+        </scene>
+        <!--Incoming PaymentQR Code View Controller-->
+        <scene sceneID="WRF-Fv-E09">
+            <objects>
+                <viewController id="6dI-Cx-ScB" customClass="IncomingPaymentQRCodeViewController" customModule="Junction_2018_MobilePay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yKL-93-Ono">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8PC-u9-Ray">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="24Y-cR-2Ba"/>
+                                    <constraint firstAttribute="width" secondItem="8PC-u9-Ray" secondAttribute="height" id="XyY-Je-VXB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8PC-u9-Ray" firstAttribute="centerX" secondItem="yKL-93-Ono" secondAttribute="centerX" id="qmn-2W-tBH"/>
+                            <constraint firstItem="8PC-u9-Ray" firstAttribute="centerY" secondItem="yKL-93-Ono" secondAttribute="centerY" id="voK-gA-7pP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4JB-co-iyK"/>
+                    </view>
+                    <connections>
+                        <outlet property="qrCodeImageView" destination="8PC-u9-Ray" id="qst-ez-jGd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Anq-lf-Xcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5098.3999999999996" y="-226.23688155922042"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ut1-bX-8uI">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yE0-Jg-nU5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="iug-4s-caA"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UBn-Vc-UwS">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Gyc-By-1Ty" kind="relationship" relationship="viewControllers" id="lMJ-gN-ySE"/>
+                        <segue destination="skc-Vm-vmZ" kind="relationship" relationship="viewControllers" id="Ikg-ZG-HzG"/>
+                        <segue destination="VNT-cn-HfQ" kind="relationship" relationship="viewControllers" id="LrQ-Yc-ccb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jje-GK-l02" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Pay-->
+        <scene sceneID="mOh-J8-IYf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gyc-By-1Ty" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pay" id="MzA-Po-Frg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8OV-9U-XfW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KHW-d0-WLB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyW-F4-v8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720.79999999999995" y="-779.46026986506752"/>
+        </scene>
+        <!--Get money-->
+        <scene sceneID="85m-E5-wGb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="skc-Vm-vmZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Get money" id="2eV-Sq-H17"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Ep-v0-ts9">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yMG-LZ-t0m" kind="relationship" relationship="rootViewController" id="ydZ-M6-0zP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAl-Z6-D4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3351.1999999999998" y="-226.23688155922042"/>
+        </scene>
+        <!--Balance-->
+        <scene sceneID="MdY-uT-Sbq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VNT-cn-HfQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Balance" id="JXK-Cm-DFl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4va-5a-plz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aqR-m5-seW" kind="relationship" relationship="rootViewController" id="dbi-pS-CI5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rT7-kK-fdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720.79999999999995" y="941.37931034482767"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="qrcode" width="225" height="225"/>
+    </resources>
 </document>

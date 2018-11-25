@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		9247755421A9B17100B579C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9247755321A9B17100B579C6 /* AppDelegate.swift */; };
-		9247755621A9B17100B579C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9247755521A9B17100B579C6 /* ViewController.swift */; };
 		9247755921A9B17100B579C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9247755721A9B17100B579C6 /* Main.storyboard */; };
 		9247755B21A9B17300B579C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9247755A21A9B17300B579C6 /* Assets.xcassets */; };
-		9247755E21A9B17300B579C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9247755C21A9B17300B579C6 /* LaunchScreen.storyboard */; };
+		9247756621A9B38A00B579C6 /* RecapViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9247756521A9B38A00B579C6 /* RecapViewcontroller.swift */; };
+		9247756821A9BD8900B579C6 /* OutgoingPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9247756721A9BD8900B579C6 /* OutgoingPaymentViewController.swift */; };
+		92918C7921A9CCA5009FFAEB /* IncomingPaymentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92918C7821A9CCA5009FFAEB /* IncomingPaymentTableViewController.swift */; };
+		92918C7B21A9CD2A009FFAEB /* IncomingPaymentQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92918C7A21A9CD2A009FFAEB /* IncomingPaymentQRCodeViewController.swift */; };
+		92918C7D21A9D141009FFAEB /* ItemOnSaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92918C7C21A9D140009FFAEB /* ItemOnSaleTableViewCell.swift */; };
+		92918C8421AA20EF009FFAEB /* BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92918C8321AA20EF009FFAEB /* BLE.swift */; };
+		FC598810583C67B7632FAE1A /* Pods_Junction_2018_MobilePay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7835E5E251256655940D73 /* Pods_Junction_2018_MobilePay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4222131DE83D03BFC0764F16 /* Pods-Junction_2018_MobilePay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Junction_2018_MobilePay.release.xcconfig"; path = "Pods/Target Support Files/Pods-Junction_2018_MobilePay/Pods-Junction_2018_MobilePay.release.xcconfig"; sourceTree = "<group>"; };
 		9247755021A9B17100B579C6 /* Junction_2018_MobilePay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Junction_2018_MobilePay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9247755321A9B17100B579C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9247755521A9B17100B579C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9247755821A9B17100B579C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9247755A21A9B17300B579C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9247755D21A9B17300B579C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9247755F21A9B17300B579C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9247756521A9B38A00B579C6 /* RecapViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapViewcontroller.swift; sourceTree = "<group>"; };
+		9247756721A9BD8900B579C6 /* OutgoingPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutgoingPaymentViewController.swift; sourceTree = "<group>"; };
+		92918C7821A9CCA5009FFAEB /* IncomingPaymentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingPaymentTableViewController.swift; sourceTree = "<group>"; };
+		92918C7A21A9CD2A009FFAEB /* IncomingPaymentQRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingPaymentQRCodeViewController.swift; sourceTree = "<group>"; };
+		92918C7C21A9D140009FFAEB /* ItemOnSaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOnSaleTableViewCell.swift; sourceTree = "<group>"; };
+		92918C8321AA20EF009FFAEB /* BLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE.swift; sourceTree = "<group>"; };
+		B1C01365EAC05895B5FD35A9 /* Pods-Junction_2018_MobilePay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Junction_2018_MobilePay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Junction_2018_MobilePay/Pods-Junction_2018_MobilePay.debug.xcconfig"; sourceTree = "<group>"; };
+		BD7835E5E251256655940D73 /* Pods_Junction_2018_MobilePay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Junction_2018_MobilePay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC598810583C67B7632FAE1A /* Pods_Junction_2018_MobilePay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55721CFD8EC468DF7449845A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1C01365EAC05895B5FD35A9 /* Pods-Junction_2018_MobilePay.debug.xcconfig */,
+				4222131DE83D03BFC0764F16 /* Pods-Junction_2018_MobilePay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9247754721A9B17100B579C6 = {
 			isa = PBXGroup;
 			children = (
 				9247755221A9B17100B579C6 /* Junction_2018_MobilePay */,
 				9247755121A9B17100B579C6 /* Products */,
+				55721CFD8EC468DF7449845A /* Pods */,
+				A9B75DCB3149BAF02242B6B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +78,50 @@
 		9247755221A9B17100B579C6 /* Junction_2018_MobilePay */ = {
 			isa = PBXGroup;
 			children = (
-				9247755321A9B17100B579C6 /* AppDelegate.swift */,
-				9247755521A9B17100B579C6 /* ViewController.swift */,
+				92918C8221AA207B009FFAEB /* Utils */,
+				92918C8121AA2073009FFAEB /* Views */,
+				92918C8021AA2061009FFAEB /* ViewControllers */,
 				9247755721A9B17100B579C6 /* Main.storyboard */,
-				9247755A21A9B17300B579C6 /* Assets.xcassets */,
-				9247755C21A9B17300B579C6 /* LaunchScreen.storyboard */,
-				9247755F21A9B17300B579C6 /* Info.plist */,
 			);
 			path = Junction_2018_MobilePay;
+			sourceTree = "<group>";
+		};
+		92918C8021AA2061009FFAEB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9247756721A9BD8900B579C6 /* OutgoingPaymentViewController.swift */,
+				9247756521A9B38A00B579C6 /* RecapViewcontroller.swift */,
+				92918C7821A9CCA5009FFAEB /* IncomingPaymentTableViewController.swift */,
+				92918C7A21A9CD2A009FFAEB /* IncomingPaymentQRCodeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		92918C8121AA2073009FFAEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92918C7C21A9D140009FFAEB /* ItemOnSaleTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92918C8221AA207B009FFAEB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9247755F21A9B17300B579C6 /* Info.plist */,
+				9247755A21A9B17300B579C6 /* Assets.xcassets */,
+				9247755321A9B17100B579C6 /* AppDelegate.swift */,
+				92918C8321AA20EF009FFAEB /* BLE.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A9B75DCB3149BAF02242B6B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD7835E5E251256655940D73 /* Pods_Junction_2018_MobilePay.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9247756221A9B17300B579C6 /* Build configuration list for PBXNativeTarget "Junction_2018_MobilePay" */;
 			buildPhases = (
+				AB4A61FA8B66232183A2066A /* [CP] Check Pods Manifest.lock */,
 				9247754C21A9B17100B579C6 /* Sources */,
 				9247754D21A9B17100B579C6 /* Frameworks */,
 				9247754E21A9B17100B579C6 /* Resources */,
+				D24E037A22A3E50507D555EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,7 +184,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9247755E21A9B17300B579C6 /* LaunchScreen.storyboard in Resources */,
 				9247755B21A9B17300B579C6 /* Assets.xcassets in Resources */,
 				9247755921A9B17100B579C6 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +191,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AB4A61FA8B66232183A2066A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Junction_2018_MobilePay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D24E037A22A3E50507D555EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Junction_2018_MobilePay/Pods-Junction_2018_MobilePay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BluetoothKit/BluetoothKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BluetoothKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Junction_2018_MobilePay/Pods-Junction_2018_MobilePay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9247754C21A9B17100B579C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9247755621A9B17100B579C6 /* ViewController.swift in Sources */,
+				92918C7921A9CCA5009FFAEB /* IncomingPaymentTableViewController.swift in Sources */,
+				9247756621A9B38A00B579C6 /* RecapViewcontroller.swift in Sources */,
 				9247755421A9B17100B579C6 /* AppDelegate.swift in Sources */,
+				92918C7B21A9CD2A009FFAEB /* IncomingPaymentQRCodeViewController.swift in Sources */,
+				92918C8421AA20EF009FFAEB /* BLE.swift in Sources */,
+				92918C7D21A9D141009FFAEB /* ItemOnSaleTableViewCell.swift in Sources */,
+				9247756821A9BD8900B579C6 /* OutgoingPaymentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,14 +264,6 @@
 				9247755821A9B17100B579C6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9247755C21A9B17300B579C6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9247755D21A9B17300B579C6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -280,11 +387,13 @@
 		};
 		9247756321A9B17300B579C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1C01365EAC05895B5FD35A9 /* Pods-Junction_2018_MobilePay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KY38V7832C;
-				INFOPLIST_FILE = Junction_2018_MobilePay/Info.plist;
+				DEVELOPMENT_TEAM = 2R74T68XJG;
+				INFOPLIST_FILE = "$(SRCROOT)/Junction_2018_MobilePay/Utils/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +407,13 @@
 		};
 		9247756421A9B17300B579C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4222131DE83D03BFC0764F16 /* Pods-Junction_2018_MobilePay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KY38V7832C;
-				INFOPLIST_FILE = Junction_2018_MobilePay/Info.plist;
+				DEVELOPMENT_TEAM = 2R74T68XJG;
+				INFOPLIST_FILE = "$(SRCROOT)/Junction_2018_MobilePay/Utils/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
